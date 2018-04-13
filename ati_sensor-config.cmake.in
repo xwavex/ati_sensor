@@ -1,0 +1,17 @@
+
+get_filename_component(@CMAKE_PROJECT_NAME@_CONFIG_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+set(@CMAKE_PROJECT_NAME@_INCLUDE_DIRS "${@CMAKE_PROJECT_NAME@_CONFIG_DIR}/../../include/")
+
+set(@CMAKE_PROJECT_NAME@_LIBRARY_DIRS "${@CMAKE_PROJECT_NAME@_CONFIG_DIR}/../../lib")
+
+set(@CMAKE_PROJECT_NAME@_LIBRARIES ati_sensor)
+
+set(@CMAKE_PROJECT_NAME@_ARCHIVES ati_sensor)
+
+# Rst-rt
+#find_package(RST-RT REQUIRED)
+#message(STATUS "RST-RT version: ${RST-RT_VERSION}")
+#include_directories(BEFORE SYSTEM ${RST-RT_INCLUDE_DIRS})
+#add_definitions(${RST-RT_CFLAGS})
+#link_directories(${RST-RT_LIBRARY_DIR} ${RST-RT_LIBRARY_DIRS})
